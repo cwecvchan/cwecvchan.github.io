@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ubuntu Drive 个人本地工具配置：通过 rclone 只读访问 Google Drive，并在单独授权后传输 Zotero PDF 附件。">
+  <title>Ubuntu Drive · 个人云盘访问</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="index.html">Ubuntu Drive</a><nav aria-label="站点导航"><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a></nav></header>
+<main>
+  <p class="eyebrow">Personal desktop configuration</p>
+  <h1>在自己的电脑上，<br>访问自己的云端文件。</h1>
+  <p class="lead">Ubuntu Drive 是基于开源工具 rclone 的个人电脑配置，用于在 Ubuntu 文件管理器中访问 Google Drive，以及在单独授权后传输 Zotero PDF 附件。</p>
+  <div class="note">此网页仅介绍工具及其数据处理方式。文件访问和 Google 授权均由用户自己电脑上的本地工具完成。</div>
+  <section><h2>个人盘只读访问</h2><p>配置完成并获得授权后，本地工具将个人 Google Drive 挂载为只读文件夹。用户可浏览目录、读取文件；这份只读授权不能上传、修改或删除云端文件。</p></section>
+  <section><h2>附件传输单独授权</h2><p>PDF 上传和电脑间传输需要另行配置及写入授权。该功能的配置目标是仅处理用户指定的附件目录，不传播文件删除，并为文件更新保留旧版本。仅完成只读挂载不代表已启用附件传输。</p><p>Zotero 数据库保存在本地。条目、笔记和阅读器标注使用 Zotero 自身的数据同步；Google Drive 用于指定的附件文件。</p></section>
+  <section><h2>数据由账号持有人控制</h2><p>本地工具直接访问 Google 服务，没有额外的开发者文件中转服务器。用户可停止服务，也可在 Google 账号中撤回授权。详细说明见<a href="privacy.html">隐私政策</a>和<a href="terms.html">使用条款</a>。</p><p>本配置供个人自用。相关问题可通过 Google OAuth 授权页面列示的用户支持邮箱联系配置维护者。</p></section>
+</main>
+<footer>Ubuntu Drive 是个人工具配置，并非 Google、Ubuntu 或 Zotero 官方产品。本站不收集 OAuth 凭据，也不接收 PDF 上传。</footer>
+</body>
+</html>
